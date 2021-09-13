@@ -1,1 +1,1 @@
-Sonora weather station data
+Weather station data
