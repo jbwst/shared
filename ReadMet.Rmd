@@ -29,7 +29,7 @@ Half-hourly data from `r weather_data_S$DateTime[1]` to `r weather_data_S$DateTi
 
 ```{r, echo=FALSE}
 ggplot(weather_data_S, aes(x = DateTime, y = AirTC_Avg)) + 
-  xlab("Date - Sonora") +
+  xlab("Date - Read") +
   ylab("Air temperature (C)") +
   geom_line() +
 #  geom_point(size = 3) +
@@ -41,28 +41,28 @@ Precip_daily_S <- ddply(weather_data_S, c("Date"), summarise,
 )
 
 ggplot(Precip_daily_S, aes(x = Date, y = sum)) + 
-  xlab("Date - Sonora") +
+  xlab("Date - Read") +
   ylab("Daily Precipitation (mm)") +
   geom_col() +
   theme_pubr()
 
 
 ggplot(weather_data_S, aes(x = DateTime, y = VWC_Avg)) + 
-  xlab("Date - Sonora") +
+  xlab("Date - Read") +
   ylab("Soil volumetric water content (@ 5 cm)") +
   geom_line() +
   #  geom_point(size = 3) +
   theme_pubr()
 
 ggplot(weather_data_S, aes(x = DateTime, y = ST_Avg)) + 
-  xlab("Date - Sonora") +
+  xlab("Date - Read") +
   ylab("Soil temperature (C; @ 5 cm)") +
   geom_line() +
   #  geom_point(size = 3) +
   theme_pubr()
 
 ggplot(weather_data_S, aes(x = DateTime, y = RH)) + 
-  xlab("Date - Sonora") +
+  xlab("Date - Read") +
   ylab("Relative Humidity (%)") +
   geom_line() +
   #  geom_point(size = 3) +
