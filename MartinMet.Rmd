@@ -1,0 +1,72 @@
+---
+title: "Martin weather station data"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+```
+
+### Location: 30.8167, -99.8619
+### Texas A&M University
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(ggpubr) 
+library(data.table)
+library(lubridate)
+library(plyr)
+source('readTOA5.R')
+
+# Import data
+weather_data_S <- readTOA5('martin_met.dat',
+                         nlabelline = 4,addFileName = TRUE)
+setDT(weather_data_S)
+weather_data_S <- subset(weather_data_S, DateTime >= "2020-07-01 00:00:00")
+```
+
+### Summary plots:
+Half-hourly data from `r weather_data_S$DateTime[1]` to `r weather_data_S$DateTime[nrow(weather_data_S)]`
+
+```{r, echo=FALSE}
+ggplot(weather_data_S, aes(x = DateTime, y = AirTC_Avg)) + 
+  xlab("Date - Martin") +
+  ylab("Air temperature (C)") +
+  geom_line() +
+#  geom_point(size = 3) +
+  theme_pubr()
+
+Precip_daily_S <- ddply(weather_data_S, c("Date"), summarise,
+                   N    = length(Rain_mm_Tot),
+                   sum = sum(Rain_mm_Tot)
+)
+
+ggplot(Precip_daily_S, aes(x = Date, y = sum)) + 
+  xlab("Date - Martin") +
+  ylab("Daily Precipitation (mm)") +
+  geom_col() +
+  theme_pubr()
+
+
+ggplot(weather_data_S, aes(x = DateTime, y = VWC_Avg)) + 
+  xlab("Date - Martin") +
+  ylab("Soil volumetric water content (@ 5 cm)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()
+
+ggplot(weather_data_S, aes(x = DateTime, y = ST_Avg)) + 
+  xlab("Date - Martin") +
+  ylab("Soil temperature (C; @ 5 cm)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()
+
+ggplot(weather_data_S, aes(x = DateTime, y = RH)) + 
+  xlab("Date - Martin") +
+  ylab("Relative Humidity (%)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()  
+```
+
