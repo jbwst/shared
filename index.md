@@ -3,16 +3,16 @@
 Our intention is to share code and data here - we'll start with some weather data and may move on from there.
 
 ### Sonora research station data
-[Summary plots](https://github.com/jbwst/shared/blob/dfd8ba80db0ce235469ab3ba643712581f9d5383/SonoraMet.md)  
-[Raw data](https://github.com/jbwst/shared/blob/dfd8ba80db0ce235469ab3ba643712581f9d5383/sonora_met.dat)  
+[Summary plots](SonoraMet.md)  
+[Raw data](sonora_met.dat)  
 
 ### Martin ranch data
 
 #### Weather station
-[Summary plots](https://github.com/jbwst/shared/blob/c22a7caff8e707d0bd2f8858a40a5f6d3d11b32e/MartinMet.md)  
-[Raw data](https://github.com/jbwst/shared/blob/c22a7caff8e707d0bd2f8858a40a5f6d3d11b32e/martin_met.dat)  
+[Summary plots](MartinMet.md)  
+[Raw data](martin_met.dat)  
 
 ### Read ranch data
-[Summary plots](https://github.com/jbwst/shared/blob/f03376bdda63a581da3c01eef2e9ce609c8999b7/ReadMet.md)  
-[Raw data](https://github.com/jbwst/shared/blob/eebcbe6c213619f2eb1a3e937b32cf665ae9d45b/read_met.dat)  
+[Summary plots](ReadMet.md)  
+[Raw data](read_met.dat)  
 
