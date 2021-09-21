@@ -3,12 +3,18 @@
 Our intention is to share code and data here - we'll start with some weather data and may move on from there.
 
 ### Sonora research station data
-[Summary plots](https://github.com/jbwst/shared/blob/8d7ab9b93d91d290732cdc60e9ab3a0b83a208a1/SonoraMet.md)  
-[Raw data](https://github.com/jbwst/shared/blob/8d7ab9b93d91d290732cdc60e9ab3a0b83a208a1/sonora_met.dat)  
+[Summary plots](https://github.com/jbwst/shared/blob/dfd8ba80db0ce235469ab3ba643712581f9d5383/SonoraMet.md)  
+[Raw data](https://github.com/jbwst/shared/blob/dfd8ba80db0ce235469ab3ba643712581f9d5383/sonora_met.dat)  
 
 ### Martin ranch data
+
+### Weather station
 [Summary plots](https://github.com/jbwst/shared/blob/f03376bdda63a581da3c01eef2e9ce609c8999b7/MartinMet.md)  
 [Raw data](https://github.com/jbwst/shared/blob/eebcbe6c213619f2eb1a3e937b32cf665ae9d45b/martin_met.dat)  
+
+### Flux tower
+[Summary plots](https://github.com/jbwst/shared/blob/7462bf77bd3e3bbc3ed934c87dc027b7398a4096/MartinFlux.md)  
+[Raw data](https://github.com/jbwst/shared/blob/7462bf77bd3e3bbc3ed934c87dc027b7398a4096/martin_flux.dat)  
 
 ### Read ranch data
 [Summary plots](https://github.com/jbwst/shared/blob/f03376bdda63a581da3c01eef2e9ce609c8999b7/ReadMet.md)  
