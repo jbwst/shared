@@ -9,12 +9,12 @@ Our intention is to share code and data here - we'll start with some weather dat
 ### Martin ranch data
 
 #### Weather station
-[Summary plots](https://github.com/jbwst/shared/blob/f03376bdda63a581da3c01eef2e9ce609c8999b7/MartinMet.md)  
-[Raw data](https://github.com/jbwst/shared/blob/eebcbe6c213619f2eb1a3e937b32cf665ae9d45b/martin_met.dat)  
+[Summary plots]()  
+[Raw data]()  
 
 #### Flux tower
-[Summary plots](https://github.com/jbwst/shared/blob/7462bf77bd3e3bbc3ed934c87dc027b7398a4096/MartinFlux.md)  
-[Raw data](https://github.com/jbwst/shared/blob/7462bf77bd3e3bbc3ed934c87dc027b7398a4096/martin_flux.dat)  
+[Summary plots]()  
+[Raw data]()  
 
 ### Read ranch data
 [Summary plots](https://github.com/jbwst/shared/blob/f03376bdda63a581da3c01eef2e9ce609c8999b7/ReadMet.md)  
