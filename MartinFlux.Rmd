@@ -1,0 +1,63 @@
+---
+title: "Martin Ranch flux tower data"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, warning = F)
+```
+
+### Location: 30.8167, -99.8619
+### Texas A&M University
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(ggplot2)
+library(ggpubr) 
+library(data.table)
+library(lubridate)
+library(plyr)
+
+## For reading TOA5 file
+source('~/Documents/R/SVNA/Flux data/importCSdata.R')
+
+# Import data
+weather_data_S <- read.csv(file = "martin_flux.csv")
+#setDT(weather_data_S)
+weather_data_S$TIMESTAMP <- as.POSIXct(weather_data_S$TIMESTAMP) ## ddply() doesn't like POSIXTlt
+#weather_data_S$Date <- date(weather_data_S$TIMESTAMP)
+#weather_data_S <- subset(weather_data_S, TIMESTAMP >= "2021-08-19 00:00:00")
+```
+
+### Summary plots:
+Half-hourly data from `r weather_data_S$TIMESTAMP[1]` to `r weather_data_S$TIMESTAMP[nrow(weather_data_S)]`
+
+```{r, echo=FALSE}
+ggplot(weather_data_S, aes(x = TIMESTAMP, y = TA_2_1_1)) + 
+  xlab("Date - Martin (flux tower)") +
+  ylab("Air temperature (C)") +
+  geom_line() +
+#  geom_point(size = 3) +
+  theme_pubr()
+
+ggplot(weather_data_S, aes(x = TIMESTAMP, y = SWC_1_1_1)) + 
+  xlab("Date - Martin (flux tower)") +
+  ylab("Soil volumetric water content (@ 5 cm)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()
+
+ggplot(weather_data_S, aes(x = TIMESTAMP, y = TS_1_1_1)) + 
+  xlab("Date - Martin (flux tower)") +
+  ylab("Soil temperature (C; @ 5 cm)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()
+
+ggplot(weather_data_S, aes(x = TIMESTAMP, y = RH_2_1_1)) + 
+  xlab("Date - Martin (flux tower)") +
+  ylab("Relative Humidity (%)") +
+  geom_line() +
+  #  geom_point(size = 3) +
+  theme_pubr()  
+```
+
