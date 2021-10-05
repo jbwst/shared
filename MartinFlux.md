@@ -7,6 +7,6 @@ Martin Ranch flux tower data
 
 ### Summary plots:
 
-Half-hourly data from 2021-08-19 to 2021-09-21 12:00:00
+Half-hourly data from 2021-08-19 to 2021-10-05 15:00:00
 
 ![](MartinFlux_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->![](MartinFlux_files/figure-gfm/unnamed-chunk-2-2.png)<!-- -->![](MartinFlux_files/figure-gfm/unnamed-chunk-2-3.png)<!-- -->![](MartinFlux_files/figure-gfm/unnamed-chunk-2-4.png)<!-- -->
