@@ -2,15 +2,15 @@
 
 Our intention is to share code and data here - we'll start with some weather data and may move on from there.
 
-# Sonora research station data
+## Sonora research station data
 [Summary plots](SonoraMet.md)  
 
 
 ## Martin ranch data
 
-##### Weather station
+### Weather station
 
-##### Flux tower
+### Flux tower
 
 
-### Read ranch data
+## Read ranch data
