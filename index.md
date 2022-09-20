@@ -2,21 +2,15 @@
 
 Our intention is to share code and data here - we'll start with some weather data and may move on from there.
 
-### Sonora research station data
+# Sonora research station data
 [Summary plots](SonoraMet.md)  
-[Raw data](sonora_met.dat)  
 
-### Martin ranch data
 
-#### Weather station
-[Summary plots](MartinMet.md)  
-[Raw data](martin_met.dat)  
+## Martin ranch data
 
-#### Flux tower (partial dataset)
-[Summary plots](MartinFlux.md)  
-[Raw data](martin_flux.csv)  
+##### Weather station
+
+##### Flux tower
+
 
 ### Read ranch data
-[Summary plots](ReadMet.md)  
-[Raw data](read_met.dat)  
-
